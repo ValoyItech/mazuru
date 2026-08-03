@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mazuri Interiors | Our Story & Design Philosophy</title>
+
+    <meta name="description"
+          content="Learn about Mazuri Interiors, our journey, design philosophy, and commitment to creating elegant bespoke furniture and sophisticated interior spaces across South Africa.">
+
+    <meta name="keywords"
+          content="about Mazuri Interiors, interior design company Pretoria, bespoke furniture makers, design philosophy, luxury interiors South Africa">
+
+    <meta name="author" content="Mazuri Interiors">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://mazuriinteriors.co.za/about.html">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/jpeg"
+          href="images/favicon.jpg">
+
+    <link rel="apple-touch-icon"
+          href="images/favicon.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+          content="https://mazuriinteriors.co.za/about.html">
+
+    <meta property="og:title"
+          content="About Mazuri Interiors | Our Story & Design Philosophy">
+
+    <meta property="og:description"
+          content="Discover the story behind Mazuri Interiors and our passion for bespoke furniture, elegant interiors, and timeless design.">
+
+    <meta property="og:image"
+          content="https://mazuriinteriors.co.za/images/s6.jpg">
+
+    <meta property="og:site_name" content="Mazuri Interiors">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="About Mazuri Interiors | Our Story & Design Philosophy">
+
+    <meta name="twitter:description"
+          content="Discover the story behind Mazuri Interiors and our passion for bespoke furniture, elegant interiors, and timeless design.">
+
+    <meta name="twitter:image"
+          content="https://mazuriinteriors.co.za/images/s6.jpg">
+
+    <meta name="theme-color" content="#0a1117">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --dark-navy: #0a1117;
+            --navy: #121c24;
+            --gold: #c8a97e;
+            --gold-light: #dcc098;
+            --gold-muted: rgba(200, 169, 126, 0.15);
+            --cream: #f7f4ef;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --text-body: #2a2a2a;
+            --text-light: #555555;
+            --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-body);
+            background-color: var(--cream);
+            overflow-x: hidden;
+            font-weight: 300;
+            line-height: 1.7;
+            letter-spacing: 0.3px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 997;
+            padding: 22px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.5s var(--transition-smooth);
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 17, 23, 0.96);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 14px 60px;
+            box-shadow: 0 2px 40px rgba(0,0,0,0.2);
+        }
+
+        .nav-logo img {
+            height: 52px;
+            width: auto;
+            transition: transform 0.4s ease;
+        }
+
+        .nav-logo img:hover {
+            transform: scale(1.03);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 38px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            position: relative;
+            padding: 6px 0;
+            transition: color 0.4s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.4s var(--transition-smooth);
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-social {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-social a {
+            color: var(--white);
+            font-size: 1rem;
+            transition: all 0.4s ease;
+            opacity: 0.7;
+        }
+
+        .nav-social a:hover {
+            color: var(--gold);
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+
+        /* ===== MOBILE SIDEBAR ===== */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1002;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 1.5px;
+            background: var(--white);
+            transition: all 0.4s var(--transition-smooth);
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(4.5px, 4.5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(4.5px, -4.5px);
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-sidebar {
+            position: fixed;
+            top: 0;
+            right: -380px;
+            width: 340px;
+            max-width: 85vw;
+            height: 100vh;
+            background: var(--dark-navy);
+            z-index: 999;
+            padding: 100px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            transition: right 0.5s var(--transition-smooth);
+            overflow-y: auto;
+        }
+
+        .mobile-sidebar.active {
+            right: 0;
+        }
+
+        .sidebar-logo {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .sidebar-logo img {
+            height: 55px;
+            width: auto;
+            opacity: 0.9;
+        }
+
+        .sidebar-divider {
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+            margin: 0 auto 40px;
+            opacity: 0.5;
+        }
+
+        .sidebar-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .sidebar-links li {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .sidebar-links a {
+            display: block;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            padding: 18px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .sidebar-links a::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .sidebar-links a:hover {
+            color: var(--gold);
+            padding-left: 20px;
+        }
+
+        .sidebar-links a:hover::before {
+            width: 30px;
+        }
+
+        .sidebar-social {
+            margin-top: auto;
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .sidebar-social a {
+            color: rgba(255,255,255,0.70);
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-social a:hover {
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        .sidebar-tagline {
+            text-align: center;
+            margin-top: 25px;
+            color: rgba(255,255,255,0.75);
+            font-size: 0.65rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: var(--dark-navy);
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+        }
+
+        .page-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(10, 17, 23, 0.6) 0%, rgba(10, 17, 23, 0.8) 100%);
+            z-index: 1;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        .page-hero-label {
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .page-hero-title {
+            color: var(--white);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 300;
+            font-style: italic;
+            line-height: 1.15;
+        }
+
+        .page-hero-title .gold-text {
+            font-style: normal;
+            font-weight: 400;
+            color: var(--gold);
+        }
+
+        /* ===== SECTION STYLES ===== */
+        .section {
+            padding: 120px 60px;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .section-label {
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            color: var(--text-dark);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
+            font-weight: 300;
+            line-height: 1.15;
+        }
+
+        .section-title.white {
+            color: var(--white);
+        }
+
+        .section-divider {
+            width: 50px;
+            height: 1px;
+            background: var(--gold);
+            margin: 25px auto 0;
+            opacity: 0.6;
+        }
+
+        /* ===== ABOUT INTRO ===== */
+        .about-intro {
+            background: var(--cream);
+        }
+
+        .about-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .about-intro-images {
+            position: relative;
+        }
+
+        .about-intro-img {
+            width: 100%;
+            border-radius: 2px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+        }
+
+        .about-intro-content h2 {
+            color: var(--text-dark);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .about-intro-content p {
+            color: var(--text-body);
+            font-size: 0.95rem;
+            line-height: 1.9;
+            margin-bottom: 22px;
+            font-weight: 300;
+        }
+
+        /* ===== CREATIVE ETHOS ===== */
+        .ethos-section {
+            background: var(--dark-navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ethos-section::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgba(200, 169, 126, 0.08);
+            border-radius: 50%;
+        }
+
+        .ethos-section::after {
+            content: '';
+            position: absolute;
+            bottom: -200px;
+            left: -200px;
+            width: 600px;
+            height: 600px;
+            border: 1px solid rgba(200, 169, 126, 0.05);
+            border-radius: 50%;
+        }
+
+        .ethos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ethos-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.5s var(--transition-smooth);
+        }
+
+        .ethos-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+
+        .ethos-card-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s var(--transition-smooth);
+        }
+
+        .ethos-card:hover .ethos-card-img {
+            transform: scale(1.08);
+        }
+
+        .ethos-card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 25px 30px;
+            background: linear-gradient(to top, rgba(10, 17, 23, 0.95) 0%, rgba(10, 17, 23, 0.4) 60%, transparent 100%);
+            transition: all 0.4s ease;
+        }
+
+        .ethos-card:hover .ethos-card-overlay {
+            padding-bottom: 40px;
+            background: linear-gradient(to top, rgba(10, 17, 23, 0.98) 0%, rgba(10, 17, 23, 0.5) 70%, transparent 100%);
+        }
+
+        .ethos-card h3 {
+            color: var(--white);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .ethos-card p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.82rem;
+            line-height: 1.7;
+            font-weight: 300;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.5s var(--transition-smooth);
+        }
+
+        .ethos-card:hover p {
+            max-height: 100px;
+            opacity: 1;
+            margin-top: 8px;
+        }
+
+        /* ===== LOGO DISPLAY ===== */
+        .logo-display {
+            background: linear-gradient(to bottom, #5a3a2a 0%, #2c1810 45%, #000000 100%);
+            padding: 100px 60px;
+            text-align: center;
+        }
+
+        .logo-display img {
+            max-height: 220px;
+            width: auto;
+            opacity: 0.9;
+        }
+
+        /* ===== FEATURED PRODUCT ===== */
+        .featured-section {
+            background: var(--cream);
+            padding: 0;
+        }
+
+        .featured-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: auto;
+        }
+
+        .featured-image-wrap {
+            position: relative;
+            overflow: hidden;
+            background: var(--dark-navy);
+        }
+
+        .featured-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .featured-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px 70px;
+            background: var(--white);
+        }
+
+        .featured-content .section-label {
+            text-align: left;
+        }
+
+        .featured-content h2 {
+            color: var(--text-dark);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .featured-content p {
+            color: var(--text-body);
+            font-size: 0.95rem;
+            line-height: 1.9;
+            margin-bottom: 18px;
+            font-weight: 300;
+        }
+
+        .featured-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--dark-navy);
+            color: var(--white);
+            padding: 16px 38px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.5s var(--transition-smooth);
+            align-self: flex-start;
+            margin-top: 15px;
+            border: 1px solid var(--dark-navy);
+        }
+
+        .featured-btn:hover {
+            background: transparent;
+            color: var(--dark-navy);
+        }
+
+        /* ===== WHY CHOOSE US ===== */
+        .working-section {
+            background: var(--dark-navy);
+            position: relative;
+            padding-bottom: 80px;
+        }
+
+        .working-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="0.8" fill="rgba(200,169,126,0.04)"/></svg>');
+            background-size: 50px 50px;
+        }
+
+        .working-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .working-card {
+            text-align: center;
+            padding: 40px 30px;
+        }
+
+        .working-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4.5rem;
+            font-weight: 300;
+            color: rgba(200, 169, 126, 0.15);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .working-card h3 {
+            color: var(--white);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 22px;
+            letter-spacing: 1px;
+        }
+
+        .working-card h3 i {
+            color: var(--gold);
+            margin-right: 12px;
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .working-card p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.9rem;
+            line-height: 1.9;
+            font-weight: 300;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--dark-navy);
+            padding: 0;
+        }
+
+        .footer-top {
+            padding: 80px 60px 50px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-brand img {
+            height: 55px;
+            width: auto;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.85rem;
+            line-height: 1.9;
+            font-weight: 300;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 14px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.70);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 300;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .footer-col ul li a::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--gold);
+            padding-left: 20px;
+        }
+
+        .footer-col ul li a:hover::before {
+            width: 12px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .footer-contact-item i {
+            color: var(--gold);
+            font-size: 0.85rem;
+            margin-top: 4px;
+            opacity: 0.7;
+        }
+
+        .footer-contact-item span,
+        .footer-contact-item a {
+            color: rgba(255,255,255,0.70);
+            font-size: 0.85rem;
+            font-weight: 300;
+            text-decoration: none;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        .footer-contact-item a:hover {
+            color: var(--gold);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            border: 1px solid rgba(200, 169, 126, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.70);
+            font-size: 0.85rem;
+            transition: all 0.4s ease;
+        }
+
+        .footer-social a:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--dark-navy);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 25px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .footer-bottom .gold {
+            color: var(--gold);
+            opacity: 0.7;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .about-intro-grid,
+            .featured-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .ethos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .working-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-top {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .featured-content {
+                padding: 70px 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 25px;
+            }
+
+            .navbar.scrolled {
+                padding: 12px 25px;
+            }
+
+            .nav-links,
+            .nav-social {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .page-hero {
+                height: 50vh;
+                min-height: 350px;
+            }
+
+            .section {
+                padding: 70px 25px;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .ethos-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .ethos-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .ethos-card-overlay {
+                padding: 25px 15px 20px;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 60px 30px 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                padding: 20px 30px;
+                justify-content: center;
+            }
+
+            .featured-content {
+                padding: 50px 25px;
+            }
+
+            .about-intro-content h2,
+            .featured-content h2 {
+                font-size: 2rem;
+            }
+
+            .logo-display {
+                padding: 60px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ethos-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .ethos-card h3 {
+                font-size: 0.95rem;
+            }
+
+            .page-hero-title {
+                font-size: 2.2rem;
+            }
+        }
+
+
+        /* Force navbar to use mobile padding from the start */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 997;
+    padding: 22px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s var(--transition-smooth);
+    /* Prevent horizontal scroll */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Mobile navbar - force these styles to apply immediately */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px !important;
+        min-height: 70px;
+        /* Prevent overflow */
+        max-width: 100vw;
+        width: 100vw;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-logo img {
+        height: 40px !important;
+        max-height: 40px !important;
+        width: auto;
+    }
+
+    .hamburger {
+        display: flex !important;
+        flex-shrink: 0;
+        margin-left: auto;
+        padding: 6px;
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger span {
+        width: 22px;
+        height: 1.5px;
+        flex-shrink: 0;
+    }
+
+    /* Hide desktop items */
+    .nav-links,
+    .nav-social {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 16px !important;
+        min-height: 60px;
+    }
+
+    .nav-logo img {
+        height: 35px !important;
+    }
+
+    .hamburger {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        padding: 5px;
+    }
+
+    .hamburger span {
+        width: 20px;
+        height: 1.5px;
+    }
+}
+
+/* Add at the root level */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Ensure navbar container doesn't overflow */
+.navbar {
+    box-sizing: border-box;
+}
+
+/* Make sure the logo and hamburger stay in their lanes */
+.nav-logo {
+    flex-shrink: 0;
+}
+
+.hamburger {
+    flex-shrink: 0;
+}
+    </style>
+
+</head>
+<body>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- MOBILE SIDEBAR -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-logo">
+            <img src="images/logo.png" alt="Mazuri Interiors">
+        </div>
+        <div class="sidebar-divider"></div>
+        <ul class="sidebar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Collection</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="sidebar-social">
+            <a href="https://www.facebook.com/mazuriinteriors/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/mazuriinterior/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@mazuriinteriors" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p class="sidebar-tagline">Quality | Bespoke | Furniture</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Mazuri Interiors Logo"></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="gallery.html">Collection</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="https://www.facebook.com/mazuriinteriors/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/mazuriinterior/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@mazuriinteriors" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('images/mazulu%20(2).jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <p class="page-hero-label">Discover Our Story</p>
+            <h1 class="page-hero-title">About <span class="gold-text">Mazuri</span></h1>
+        </div>
+    </section>
+
+    <!-- ABOUT INTRO -->
+    <section class="section about-intro" id="about">
+        <div class="about-intro-grid">
+            <div class="about-intro-images" data-aos="fade-right">
+                <img src="images/mazulu%20(2).jpg" alt="Mazuri Interior Design" class="about-intro-img">
+            </div>
+            <div class="about-intro-content" data-aos="fade-left">
+                <p class="section-label">Who We Are</p>
+                <h2>Designing Spaces,<br>Crafting Dreams</h2>
+                <p>
+                    Since its inception, Mazuri Interiors is a well-versed, versatile and leading 
+                    residential and corporate interior design firm. Mazuri is constantly up-to-date with 
+                    international and local contemporary and global furniture and design trends.
+                </p>
+                <p>
+                    Mazuri Interiors is a dynamic interior design and décor company, boasting with an 
+                    impressive portfolio. We will handle your design and décor projects with class, 
+                    sophistication, innovation and complete professionalism.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREATIVE ETHOS -->
+    <section class="section ethos-section" id="ethos">
+        <div class="section-header" data-aos="fade-up">
+            <p class="section-label">Our Philosophy</p>
+            <h2 class="section-title white">Mazuri's Creative Ethos</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="ethos-grid">
+            <div class="ethos-card" data-aos="fade-up" data-aos-delay="0">
+                <img src="images/s1.jpg" alt="Innovative Conceptualisation" class="ethos-card-img">
+                <div class="ethos-card-overlay">
+                    <h3>Innovative Conceptualisation</h3>
+                    <p>Creative vision that transforms ordinary spaces into extraordinary experiences.</p>
+                </div>
+            </div>
+            <div class="ethos-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/s2.jpg" alt="Immaculate Interior Design" class="ethos-card-img">
+                <div class="ethos-card-overlay">
+                    <h3>Immaculate Interior Design</h3>
+                    <p>Residential spaces crafted with precision, beauty and functionality.</p>
+                </div>
+            </div>
+            <div class="ethos-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/s3.jpg" alt="Sophisticated Décor" class="ethos-card-img">
+                <div class="ethos-card-overlay">
+                    <h3>Sophisticated Décor</h3>
+                    <p>Elegant design elements that elevate every room with timeless sophistication.</p>
+                </div>
+            </div>
+            <div class="ethos-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/s4.jpg" alt="Tick Craftsmanship" class="ethos-card-img">
+                <div class="ethos-card-overlay">
+                    <h3>Tick Craftsmanship</h3>
+                    <p>Meticulous attention to detail ensuring lasting quality and beauty.</p>
+                </div>
+            </div>
+            <div class="ethos-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/s5.jpg" alt="Genuine Materials" class="ethos-card-img">
+                <div class="ethos-card-overlay">
+                    <h3>Genuine Materials</h3>
+                    <p>Authentic, responsibly-sourced materials bringing natural beauty to your home.</p>
+                </div>
+            </div>
+            <div class="ethos-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="images/s6.jpg" alt="Passion & Dedication" class="ethos-card-img">
+                <div class="ethos-card-overlay">
+                    <h3>Passion & Dedication</h3>
+                    <p>Every project infused with our love for design and commitment to excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGO DISPLAY -->
+    <section class="logo-display" data-aos="fade-up">
+        <img src="images/logo.png" alt="Mazuri Interiors Logo">
+    </section>
+
+    <!-- FEATURED PRODUCT -->
+    <section class="featured-section" id="featured">
+        <div class="featured-inner">
+            <div class="featured-image-wrap" data-aos="fade-right">
+                <img src="images/mazulu%20(3).jpg" alt="Fluer Dressing Table">
+            </div>
+            <div class="featured-content" data-aos="fade-left">
+                <p class="section-label">Featured Collection</p>
+                <h2>Fluer Dressing Table</h2>
+                <p>
+                    The level of sophistication and class infused in all our furniture collection, 
+                    is a clear personification of taste and quality most of our clients love about our brand. 
+                    We don't compete, but we innovate pieces that fit the taste of your style and lifestyle. 
+                    Ideally your home is your sanctuary; what we do differently is turn that dream into a reality.
+                </p>
+                <a href="gallery.html" class="featured-btn">
+                    View Full Collection <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section working-section" id="working">
+        <div class="section-header" data-aos="fade-up">
+            <p class="section-label">Why Choose Us</p>
+            <h2 class="section-title white">Working With Mazuri Interiors</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="working-grid">
+            <div class="working-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="working-number">01</div>
+                <h3><i class="fas fa-tools"></i> Worksmanship</h3>
+                <p>
+                    The quality of our furniture is splendidly superior. We invest a lot in the 
+                    quality of materials and in continuous quality control.
+                </p>
+            </div>
+            <div class="working-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="working-number">02</div>
+                <h3><i class="fas fa-crown"></i> Sophistication & Class</h3>
+                <p>
+                    When it comes to our craftsmanship, we know our job. It's full of passion 
+                    and a hint of pizzazz. We take pride in all the furniture we manufacture, 
+                    and we certainly know it will change your life.
+                </p>
+            </div>
+            <div class="working-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="working-number">03</div>
+                <h3><i class="fas fa-user-check"></i> Client-Centric</h3>
+                <p>
+                    With all that we do, our customer comes first. Hence our ability to produce 
+                    furniture that will fit your requirements and be tailormade. Delivery is 
+                    imperative to our culture and meeting those standards is what we do best.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Mazuri Interiors">
+                <p>
+                    Mazuri Interiors is a dynamic interior design and décor company, 
+                    crafting bespoke furniture and elegant spaces since 2015.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/mazuriinteriors/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mazuriinterior/?hl=en" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@mazuriinteriors" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/27615075537" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="gallery.html">Collection</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Residential Design</a></li>
+                    <li><a href="services.html">Corporate Interiors</a></li>
+                    <li><a href="services.html">Bespoke Furniture</a></li>
+                    <li><a href="services.html">Décor Consulting</a></li>
+                    <li><a href="services.html">Project Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>824 Stanza Bopape Street, Eastwoods<br>Pretoria, South Africa</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@mazuriinteriors.co.za">info@mazuriinteriors.co.za</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+27680933103">+27 (0)68 093 3103</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/27615075537" target="_blank">+27 61 507 5537</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <span class="gold">MAZURI INTERIORS</span> &copy; 2026 | Quality | Bespoke | Furniture | Developed by <a href="https://valoyitech.co.za/" target="_blank" rel="noopener noreferrer" style="color: var(--gold); text-decoration: none;">ValoyItech</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile sidebar
+        const hamburger = document.getElementById('hamburger');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function openSidebar() {
+            hamburger.classList.add('active');
+            mobileSidebar.classList.add('active');
+            sidebarOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            hamburger.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            sidebarOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            if (mobileSidebar.classList.contains('active')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        });
+
+        sidebarOverlay.addEventListener('click', closeSidebar);
+
+        // Close sidebar on link click
+        document.querySelectorAll('.sidebar-links a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+    </script>
+</body>
+</html>
