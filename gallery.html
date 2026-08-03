@@ -792,6 +792,80 @@
             opacity: 0.7;
         }
 
+
+        /* ===== VIDEO GALLERY ITEMS ===== */
+        .gallery-item-video {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+            cursor: pointer;
+            background: var(--dark-navy);
+        }
+
+        .gallery-item-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .gallery-item-video:hover video {
+            transform: scale(1.05);
+        }
+
+        .gallery-item-video .gallery-item-overlay {
+            background: linear-gradient(to top, rgba(10, 17, 23, 0.7) 0%, rgba(10, 17, 23, 0.3) 50%, transparent 100%);
+        }
+
+        .gallery-item-video .gallery-item-overlay i {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .gallery-item-video video {
+            opacity: 0.85;
+            transition: opacity 0.4s ease;
+        }
+
+        .gallery-item-video:hover video {
+            opacity: 1;
+        }
+
+        /* Video in lightbox */
+        .lightbox-video {
+            max-width: 90vw;
+            max-height: 85vh;
+            border-radius: 2px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            display: none;
+        }
+
+        .lightbox-video.active {
+            display: block;
+        }
+
+        .lightbox-img.hidden {
+            display: none;
+        }
+
+        /* Span items for visual variety */
+        .gallery-item-span {
+            grid-row: span 2;
+            aspect-ratio: auto;
+        }
+
+        @media (max-width: 1024px) {
+            .gallery-item-span {
+                grid-row: span 1;
+                aspect-ratio: 1 / 1;
+            }
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .gallery-grid {
@@ -950,94 +1024,282 @@
             <div class="section-divider"></div>
         </div>
         <div class="gallery-grid">
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(0)">
-                <img src="images/gallery/gallery%20(1).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(0)">
+                <img src="images/gallery/gallery%20(1).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" onclick="openLightbox(1)">
-                <img src="images/gallery/gallery%20(2).jpg" alt="Mazuri Interior Design">
+                <img src="images/gallery/gallery%20(2).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(2)">
-                <img src="images/gallery/gallery%20(3).jpg" alt="Mazuri Interior Design">
+                <img src="images/gallery/gallery%20(3).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" onclick="openLightbox(3)">
-                <img src="images/gallery/gallery%20(4).jpg" alt="Mazuri Interior Design">
+                <img src="images/gallery/gallery%20(4).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(4)">
-                <img src="images/gallery/gallery%20(5).jpg" alt="Mazuri Interior Design">
+                <img src="images/gallery/gallery%20(5).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" onclick="openLightbox(5)">
-                <img src="images/gallery/gallery%20(6).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1448-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(6)">
-                <img src="images/gallery/gallery%20(7).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1449-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" onclick="openLightbox(7)">
-                <img src="images/gallery/gallery%20(8).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1451-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(8)">
-                <img src="images/gallery/gallery%20(9).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(8)">
+                <img src="images/new/1A7A1454-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" onclick="openLightbox(9)">
-                <img src="images/gallery/gallery%20(10).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1461-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" onclick="openLightbox(10)">
-                <img src="images/gallery/gallery%20(11).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1462-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="550" onclick="openLightbox(11)">
-                <img src="images/gallery/gallery%20(12).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1464-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" onclick="openLightbox(12)">
-                <img src="images/gallery/gallery%20(13).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1482-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="650" onclick="openLightbox(13)">
-                <img src="images/gallery/gallery%20(14).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1484-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
             <div class="gallery-item" data-aos="fade-up" data-aos-delay="700" onclick="openLightbox(14)">
-                <img src="images/gallery/gallery%20(15).jpg" alt="Mazuri Interior Design">
+                <img src="images/new/1A7A1487-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="750" onclick="openLightbox(15)">
-                <img src="images/gallery/gallery%20(16).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item gallery-item-video" data-aos="fade-up" data-aos-delay="750" onclick="openLightbox(15)">
+                <video muted loop playsinline preload="metadata" class="gallery-video" id="vid-15">
+                    <source src="images/new/IMG_7087.MOV" type="video/mp4">
+                </video>
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-play-circle" style="font-size: 2rem;"></i>
+                </div>
+            </div>
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(16)">
+                <img src="images/gallery/gallery%20(6).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="800" onclick="openLightbox(16)">
-                <img src="images/gallery/gallery%20(17).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" onclick="openLightbox(17)">
+                <img src="images/gallery/gallery%20(7).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="750" onclick="openLightbox(15)">
-                <img src="images/gallery/gallery%20(19).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(18)">
+                <img src="images/gallery/gallery%20(8).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="800" onclick="openLightbox(16)">
-                <img src="images/gallery/gallery%20(20).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" onclick="openLightbox(19)">
+                <img src="images/gallery/gallery%20(9).jpg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="850" onclick="openLightbox(17)">
-                <img src="images/gallery/gallery%20(18).jpg" alt="Mazuri Interior Design">
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(20)">
+                <img src="images/gallery/gallery%20(10).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" onclick="openLightbox(21)">
+                <img src="images/new/1A7A1490-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(22)">
+                <img src="images/new/1A7A1492-Edit-CMP.jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" onclick="openLightbox(23)">
+                <img src="images/new/new (1).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(24)">
+                <img src="images/new/new (2).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" onclick="openLightbox(25)">
+                <img src="images/new/new (3).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" onclick="openLightbox(26)">
+                <img src="images/new/new (4).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="550" onclick="openLightbox(27)">
+                <img src="images/new/new (5).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" onclick="openLightbox(28)">
+                <img src="images/new/new (6).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="650" onclick="openLightbox(29)">
+                <img src="images/new/new (7).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="700" onclick="openLightbox(30)">
+                <img src="images/new/new (8).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="750" onclick="openLightbox(31)">
+                <img src="images/gallery/gallery%20(11).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(32)">
+                <img src="images/gallery/gallery%20(12).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" onclick="openLightbox(33)">
+                <img src="images/gallery/gallery%20(13).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(34)">
+                <img src="images/gallery/gallery%20(14).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" onclick="openLightbox(35)">
+                <img src="images/gallery/gallery%20(15).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(36)">
+                <img src="images/new/new (9).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" onclick="openLightbox(37)">
+                <img src="images/new/new (10).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(38)">
+                <img src="images/new/new (11).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" onclick="openLightbox(39)">
+                <img src="images/new/new (12).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(40)">
+                <img src="images/new/new (13).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" onclick="openLightbox(41)">
+                <img src="images/new/new (14).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" onclick="openLightbox(42)">
+                <img src="images/new/new (15).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="550" onclick="openLightbox(43)">
+                <img src="images/new/new (16).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" onclick="openLightbox(44)">
+                <img src="images/new/new (17).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="650" onclick="openLightbox(45)">
+                <img src="images/new/new (18).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gallery-item-video" data-aos="fade-up" data-aos-delay="700" onclick="openLightbox(46)">
+                <video muted loop playsinline preload="metadata" class="gallery-video" id="vid-46">
+                    <source src="images/new/IMG_7208.MOV" type="video/mp4">
+                </video>
+                <div class="gallery-item-overlay">
+                    <i class="fas fa-play-circle" style="font-size: 2rem;"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="750" onclick="openLightbox(47)">
+                <img src="images/gallery/gallery%20(16).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(48)">
+                <img src="images/gallery/gallery%20(17).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" onclick="openLightbox(49)">
+                <img src="images/gallery/gallery%20(19).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(50)">
+                <img src="images/gallery/gallery%20(20).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" onclick="openLightbox(51)">
+                <img src="images/gallery/gallery%20(18).jpg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(52)">
+                <img src="images/new/new (19).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" onclick="openLightbox(53)">
+                <img src="images/new/new (20).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(54)">
+                <img src="images/new/new (21).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" onclick="openLightbox(55)">
+                <img src="images/new/new (22).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item gallery-item-span" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(56)">
+                <img src="images/new/new (23).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" onclick="openLightbox(57)">
+                <img src="images/new/new (24).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" onclick="openLightbox(58)">
+                <img src="images/new/new (25).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="550" onclick="openLightbox(59)">
+                <img src="images/new/new (26).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" onclick="openLightbox(60)">
+                <img src="images/new/new (27).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="650" onclick="openLightbox(61)">
+                <img src="images/new/new (28).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="700" onclick="openLightbox(62)">
+                <img src="images/new/new (29).jpeg" alt="Mazuri Interior Design" loading="lazy">
+                <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="gallery-item" data-aos="fade-up" data-aos-delay="750" onclick="openLightbox(63)">
+                <img src="images/new/new (30).jpeg" alt="Mazuri Interior Design" loading="lazy">
                 <div class="gallery-item-overlay"><i class="fas fa-expand"></i></div>
             </div>
         </div>
     </section>
 
     <!-- LIGHTBOX -->
+
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
         <button class="lightbox-nav lightbox-prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
         <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImg">
+        <video class="lightbox-video" id="lightboxVideo" controls autoplay loop playsinline muted>
+            <source src="" type="video/mp4">
+        </video>
         <button class="lightbox-nav lightbox-next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
     </div>
 
@@ -1179,53 +1441,119 @@
         });
 
         // Lightbox
-        const galleryImages = [
+        const galleryItems = [
             'images/gallery/gallery%20(1).jpg',
             'images/gallery/gallery%20(2).jpg',
             'images/gallery/gallery%20(3).jpg',
             'images/gallery/gallery%20(4).jpg',
             'images/gallery/gallery%20(5).jpg',
+            'images/new/1A7A1448-Edit-CMP.jpg',
+            'images/new/1A7A1449-Edit-CMP.jpg',
+            'images/new/1A7A1451-Edit-CMP.jpg',
+            'images/new/1A7A1454-Edit-CMP.jpg',
+            'images/new/1A7A1461-Edit-CMP.jpg',
+            'images/new/1A7A1462-Edit-CMP.jpg',
+            'images/new/1A7A1464-Edit-CMP.jpg',
+            'images/new/1A7A1482-Edit-CMP.jpg',
+            'images/new/1A7A1484-Edit-CMP.jpg',
+            'images/new/1A7A1487-Edit-CMP.jpg',
+            'images/new/IMG_7087.MOV',
             'images/gallery/gallery%20(6).jpg',
             'images/gallery/gallery%20(7).jpg',
             'images/gallery/gallery%20(8).jpg',
             'images/gallery/gallery%20(9).jpg',
             'images/gallery/gallery%20(10).jpg',
+            'images/new/1A7A1490-Edit-CMP.jpg',
+            'images/new/1A7A1492-Edit-CMP.jpg',
+            'images/new/new (1).jpeg',
+            'images/new/new (2).jpeg',
+            'images/new/new (3).jpeg',
+            'images/new/new (4).jpeg',
+            'images/new/new (5).jpeg',
+            'images/new/new (6).jpeg',
+            'images/new/new (7).jpeg',
+            'images/new/new (8).jpeg',
             'images/gallery/gallery%20(11).jpg',
             'images/gallery/gallery%20(12).jpg',
             'images/gallery/gallery%20(13).jpg',
             'images/gallery/gallery%20(14).jpg',
             'images/gallery/gallery%20(15).jpg',
+            'images/new/new (9).jpeg',
+            'images/new/new (10).jpeg',
+            'images/new/new (11).jpeg',
+            'images/new/new (12).jpeg',
+            'images/new/new (13).jpeg',
+            'images/new/new (14).jpeg',
+            'images/new/new (15).jpeg',
+            'images/new/new (16).jpeg',
+            'images/new/new (17).jpeg',
+            'images/new/new (18).jpeg',
+            'images/new/IMG_7208.MOV',
             'images/gallery/gallery%20(16).jpg',
             'images/gallery/gallery%20(17).jpg',
             'images/gallery/gallery%20(19).jpg',
             'images/gallery/gallery%20(20).jpg',
-            'images/gallery/gallery%20(18).jpg'
+            'images/gallery/gallery%20(18).jpg',
+            'images/new/new (19).jpeg',
+            'images/new/new (20).jpeg',
+            'images/new/new (21).jpeg',
+            'images/new/new (22).jpeg',
+            'images/new/new (23).jpeg',
+            'images/new/new (24).jpeg',
+            'images/new/new (25).jpeg',
+            'images/new/new (26).jpeg',
+            'images/new/new (27).jpeg',
+            'images/new/new (28).jpeg',
+            'images/new/new (29).jpeg',
+            'images/new/new (30).jpeg'
         ];
 
         let currentImageIndex = 0;
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxVideo = document.getElementById('lightboxVideo');
+
+        function isVideo(src) {
+            return src && (src.endsWith('.MOV') || src.endsWith('.mov') || src.endsWith('.mp4'));
+        }
+
+        function showLightboxItem(index) {
+            const src = galleryItems[index];
+            if (isVideo(src)) {
+                lightboxImg.classList.add('hidden');
+                lightboxVideo.classList.add('active');
+                lightboxVideo.querySelector('source').src = src;
+                lightboxVideo.load();
+                lightboxVideo.play().catch(() => {});
+            } else {
+                lightboxVideo.classList.remove('active');
+                lightboxVideo.pause();
+                lightboxImg.classList.remove('hidden');
+                lightboxImg.src = src;
+            }
+        }
 
         function openLightbox(index) {
             currentImageIndex = index;
-            lightboxImg.src = galleryImages[index];
+            showLightboxItem(index);
             lightbox.classList.add('open');
             document.body.style.overflow = 'hidden';
         }
 
         function closeLightbox() {
             lightbox.classList.remove('open');
+            lightboxVideo.pause();
             document.body.style.overflow = '';
         }
 
         function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-            lightboxImg.src = galleryImages[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+            showLightboxItem(currentImageIndex);
         }
 
         function prevImage() {
-            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-            lightboxImg.src = galleryImages[currentImageIndex];
+            currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+            showLightboxItem(currentImageIndex);
         }
 
         // Close lightbox on overlay click
@@ -1241,6 +1569,18 @@
             if (e.key === 'Escape') closeLightbox();
             if (e.key === 'ArrowRight') nextImage();
             if (e.key === 'ArrowLeft') prevImage();
+        });
+
+        // Video hover autoplay in gallery grid
+        document.querySelectorAll('.gallery-item-video video').forEach(vid => {
+            const parent = vid.closest('.gallery-item-video');
+            parent.addEventListener('mouseenter', () => {
+                vid.play().catch(() => {});
+            });
+            parent.addEventListener('mouseleave', () => {
+                vid.pause();
+                vid.currentTime = 0;
+            });
         });
     </script>
 </body>
